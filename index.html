@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Artikel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Artikel</h1>
+        <button id="create-article-btn">Buat Artikel</button>
+        <div id="article-list">
+            <!-- Artikel akan ditambahkan di sini -->
+        </div>
+    </div>
+
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="article-form">
+                <label for="article-title">Judul Artikel:</label>
+                <input type="text" id="article-title" required>
+                <label for="article-image">Unggah Gambar:</label>
+                <input type="file" id="article-image" accept="image/*" required>
+                <label for="article-description">Deskripsi:</label>
+                <textarea id="article-description" required></textarea>
+                <button type="submit">Tambah Artikel</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
